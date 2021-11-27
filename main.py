@@ -1,4 +1,4 @@
-# web: python main.py   --master --processes 4 --threads 2
+# web gunicorn app:app
 from wsgiref import simple_server
 from flask import Flask, request, render_template
 from flask import Response
