@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="docker-heroku",
+    name="src",
     version="0.0.3",
     description="Wafer Fault Detection",
     author="Ankit Sharma",

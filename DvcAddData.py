@@ -13,7 +13,7 @@ for data_dir in data_dirs:
     for filePath in files:
         # print(f"dvc add {os.path.join((filePath))}")
         # print(files)
-        os.system(f"git rm -r --cached {filePath}")
+        # os.system(f"git rm -r --cached {filePath}")
         os.system(f"dvc add {filePath}")
 
         # print("Success")
