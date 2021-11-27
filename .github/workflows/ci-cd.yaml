@@ -1,4 +1,4 @@
-name: Python application
+name: Wafer Fault Detection
 
 on:
   push:
