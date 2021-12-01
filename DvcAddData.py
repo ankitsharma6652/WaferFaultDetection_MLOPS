@@ -6,14 +6,14 @@ import os
 from glob import glob
 
 
-data_dirs = ["Training_Batch_Files","Prediction_Batch_files"]
-
+data_dirs = ["Training_Batch_Files","Prediction_Batch_files","Prediction_Output_File"]
+# data_dirs=['Prediction_Output_File']
 for data_dir in data_dirs:
     files = glob(data_dir + r"/*.csv")
     for filePath in files:
         # print(f"dvc add {os.path.join((filePath))}")
         # print(files)
-        # os.system(f"git rm -r --cached {filePath}")
+        os.system(f"git rm -r --cached {filePath}")
         os.system(f"dvc add {filePath}")
 
         # print("Success")
